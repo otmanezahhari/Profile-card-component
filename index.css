@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #19a1ae;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content-profile-card {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.oval-copy-effect-bottom,
+.oval-copy-effect-top {
+  width: 100%;
+  height: 100%;
+}
+
+.img-oval-copy-effect-top {
+  top: -50%;
+  left: -19%;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.profile-card {
+  width: 350px;
+  height: 374px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 10px;
+}
+
+.couverture-photo {
+  width: 350px;
+  height: 140px;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 10px 10px 0px 0px;
+}
+
+.img-card-info {
+  position: absolute;
+  background-image: url(./images/image-victor.jpg);
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  left: 50%;
+  transition: transformX(-50%);
+  transform: translateX(-50%);
+  top: 94px;
+  border: 5px solid #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.name-age {
+  margin-top: 54px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.name-age h1 {
+  font-size: 18px;
+  color: #2e3349;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px;
+}
+
+.age {
+  margin-left: 10px;
+  display: block;
+  margin-top: 10px;
+  color: #6b7082;
+}
+
+.card-info-followers {
+  justify-content: space-between;
+  width: 249px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-info-followers p {
+  font-weight: bold;
+  color: #2e3349;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.card-info-followers span {
+  color: #6b7082;
+  font-size: 10px;
+}
+
+.img-oval-copy-effect-bottom {
+  bottom: -60%;
+  right: -8%;
+  position: absolute;
+  transform: rotate(45deg) scale(1.2);
+  z-index: -1;
+}
